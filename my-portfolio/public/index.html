@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athul Tom | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--card-bg);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-top: 0;
+        }
+
+        .links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+            margin-top: 40px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-card {
+            background-color: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .skill-card h3 {
+            margin-top: 0;
+            color: #f8fafc;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #334155;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #f8fafc;
+        }
+
+        .tag {
+            background-color: #0284c7;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Athul Tom</h1>
+            <p class="subtitle">Electronics & Robotics Engineering Student</p>
+            <p>Building the bridge between hardware and intelligence. Specialized in Robotics, Embedded Firmware, and IoT ecosystems.</p>
+            <div class="links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="mailto:your-email@gmail.com">Email</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an Electronics and Communication Engineering student with a deep passion for building autonomous systems and smart devices. My expertise lies at the intersection of hardware design and low-level firmware architecture. From optimizing power distribution with DC-DC converters to writing efficient microcontroller code and designing drone telemetry, I love transforming complex engineering concepts into functional, real-world prototypes.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Toolkit</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Hardware</h3>
+                    <p>8051, ESP32, Arduino, Raspberry Pi, 555 Timers</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Power & Systems</h3>
+                    <p>Buck-Boost Regulators, DC-DC Converters, Sensor Fusion</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Specializations</h3>
+                    <p>Robotics, IoT, Drone Technology & Assembly</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Embedded C, Assembly Language</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-card">
+                <h3>Smart Student Transit System (SSTS)</h3>
+                <div>
+                    <span class="tag">IoT</span>
+                    <span class="tag">Embedded C</span>
+                    <span class="tag">Hardware</span>
+                </div>
+                <p>An end-to-end IoT solution designed to automate student concession tracking and provide real-time updates to parents.</p>
+                <ul>
+                    <li><strong>Hardware Node:</strong> Embedded controller processing secure tap-in/tap-out data.</li>
+                    <li><strong>Guardian Section:</strong> Secure module that dispatches instant transit alerts to parents.</li>
+                    <li><strong>App Interface:</strong> Allowed parents to track balances, transit history, and recharge accounts.</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>Autonomous Drone & Robotics Platform</h3>
+                <div>
+                    <span class="tag">Robotics</span>
+                    <span class="tag">Drones</span>
+                    <span class="tag">Power Electronics</span>
+                </div>
+                <p>A versatile unmanned system focusing on assembly, flight controller calibration, and power distribution management.</p>
+                <ul>
+                    <li>Implemented optimized power routing using high-efficiency DC-DC converters to stabilize sensor voltage under heavy motor loads.</li>
+                    <li>Achieved stable loiter and waypoint navigation.</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>Low-Level Firmware & Power Modules</h3>
+                <div>
+                    <span class="tag">8051</span>
+                    <span class="tag">Assembly</span>
+                    <span class="tag">Buck-Boost</span>
+                </div>
+                <p>A collection of bare-metal programming projects and switching regulator designs.</p>
+                <ul>
+                    <li>Wrote optimized Assembly/Embedded C code using hardware timers and interrupts for precise real-time control.</li>
+                    <li>Designed Buck-Boost switching regulators to maintain stable system voltages from battery sources.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="project-card">
+                <h3>Internship in Robotics, IoT, and Drone Technology</h3>
+                <p>Gained hands-on experience in component selection, circuit prototyping, firmware flashing, and testing autonomous systems.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Athul Tom. Built for Engineers.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
